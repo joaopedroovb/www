@@ -1,10 +1,10 @@
-package service
+package services
 
 import (
 	"errors"
 	"strings"
-	models "www/models"
-	repository "www/repositories"
+	"www/models"
+	"www/repositories"
 )
 
 var (
@@ -13,11 +13,11 @@ var (
 )
 
 type UsuarioService struct {
-	repository *repository.UsuarioRepository
+	repository *repositories.UsuarioRepository
 }
 
 func NewUsuarioService(
-	repository *repository.UsuarioRepository,
+	repository *repositories.UsuarioRepository,
 ) *UsuarioService {
 	return &UsuarioService{
 		repository: repository,

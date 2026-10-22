@@ -1,4 +1,4 @@
-package handler
+package handlers
 
 import (
 	"database/sql"
@@ -50,7 +50,7 @@ func responderErro(
 	})
 }
 
-func (h *UsuarioHandler) HandleCollection(
+func (h *UsuarioHandler) HandleUser(
 	w http.ResponseWriter,
 	r *http.Request,
 ) {
